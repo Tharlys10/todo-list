@@ -1,2 +1,7 @@
-# todo-list
-Lista de afazeres
+# Lista de afazeres
+
+## 📂 Banco de dados
+
+---
+
+<img src=".github/modeling.png">
