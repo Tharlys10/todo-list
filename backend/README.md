@@ -13,9 +13,9 @@
   * [] O usuário deve ser cadastro sem avatar
   * [] No final do cadastro deve ser enviado um e-mail de boas vindas para o e-mail do usuário
 
-## Buscar usuário pelo ID
+## Buscar usuário logado
 **RF**
-  * Deve ser possivel localizar um usuário pelo id 
+  * Deve ser possivel localizar o usuário que está logado
 
 **RN**
   * [] O usuário deve está logado
