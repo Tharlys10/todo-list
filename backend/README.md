@@ -9,8 +9,8 @@
   * Deve ser utilizado o nodemailer para envio de e-mail
 
 **RN**
-  * [] Não deve ser possível cadastrar um usuário com o e-mail já existente
-  * [] O usuário deve ser cadastro sem avatar
+  * [X] Não deve ser possível cadastrar um usuário com o e-mail já existente
+  * [X] O usuário deve ser cadastro sem avatar
   * [] No final do cadastro deve ser enviado um e-mail de boas vindas para o e-mail do usuário
 
 ## Buscar usuário logado
