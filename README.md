@@ -2,6 +2,4 @@
 
 ## 📂 Banco de dados
 
----
-
 <img src=".github/modeling.png">
