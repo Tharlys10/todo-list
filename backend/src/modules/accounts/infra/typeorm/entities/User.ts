@@ -1,10 +1,11 @@
+import { Expose } from "class-transformer";
 import { Column, CreateDateColumn, Entity, PrimaryColumn, UpdateDateColumn } from "typeorm";
 import { v4 as uuid } from 'uuid';
 
 @Entity('users')
 class User {
   @PrimaryColumn()
-  id?: string
+  id: string
 
   @Column()
   name: string
@@ -24,17 +25,10 @@ class User {
   @UpdateDateColumn()
   updated_at: Date
 
-  // @Expose({ name: "avatar_url" })
-  // avatar_url(): string {
-  //   switch (process.env.DISK) {
-  //     case "local":
-  //       return `${process.env.APP_API_URL}/avatar/${this.avatar}`;
-  //     case "s3":
-  //       return `${process.env.AWS_BUCKET_URL}/avatar/${this.avatar}`;
-  //     default:
-  //       return null
-  //   }
-  // }
+  @Expose({ name: "avatar_url" })
+  avatar_url(): string {
+    return `${process.env.APP_API_URL}/avatar/${this.avatar}` || `${process.env.APP_API_URL}/avatar/default.png`;
+  }
 
   constructor() {
     if (!this.id) {

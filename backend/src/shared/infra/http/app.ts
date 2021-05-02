@@ -9,12 +9,15 @@ import "@shared/container";
 import { router } from "./routes";
 import { AppError } from "@shared/errors/AppError";
 
+import upload from "@config/upload";
+
 createConnection();
 
 const app = express();
 
 app.use(express.json());
 
+app.use("/avatar", express.static(`${upload.tmpFolder}/avatar`));
 
 app.use(router);
 
